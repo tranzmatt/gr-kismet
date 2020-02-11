@@ -19,7 +19,7 @@
 
 depends:
 - libmicrohttpd
-- zlib1g-dev
+- zlib1g
 - libnl-3
 - libcap
 - libpcap
