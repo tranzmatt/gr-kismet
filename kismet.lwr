@@ -35,9 +35,14 @@ depends:
 - python-serial
 - librtlsdr0
 - libusb
+- gnuradio
+- ubertooth
+- rtl_433
 description: Free and open source toolkit for software defined radio
 category: common
 satisfy:
   deb: kismet
-
+configure: ./configure --prefix=$prefix --with-suidgroup=dialout
+install: ./make suidinstall && ./make forceconfigs
+source: git+https://www.kismetwireless.net/git/kismet.git
 
